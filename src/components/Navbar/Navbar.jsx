@@ -64,7 +64,7 @@ const Navbar = () => {
             <img
               width={24}
               height={24}
-              src="../../../public/images/svg/menu 1.svg"
+              src="/images/svg/menu 1.svg"
               alt=""
               className="navbar-burger"
             />

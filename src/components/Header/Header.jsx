@@ -7,11 +7,7 @@ const Header = () => {
       <header className="header py-[24px]">
         <div className="container header-container flex items-center justify-between">
           <a href="#" className="logo-link">
-            <img
-              src="../../../public/images/svg/Logo.svg"
-              alt=""
-              className="logo-img"
-            />
+            <img src="/images/svg/Logo.svg" alt="" className="logo-img" />
           </a>
           <div className="header-input-wrp flex">
             <nav
@@ -76,7 +72,7 @@ const Header = () => {
               <img
                 width={16}
                 height={16}
-                src="../../../public/images/svg/zoom-2 1.svg"
+                src="/images/svg/zoom-2 1.svg"
                 alt=""
                 className="search-img"
               />
@@ -85,7 +81,7 @@ const Header = () => {
           <div className="header-icons-wrp flex items-center gap-[25px]">
             <a href="#" className="header-icons-link">
               <img
-                src="../../../public/images/svg/header-icons/Vector.svg"
+                src="/images/svg/header-icons/Vector.svg"
                 alt=""
                 className="header-icons"
                 width={24}
@@ -94,7 +90,7 @@ const Header = () => {
             </a>
             <a href="#" className="header-icons-link">
               <img
-                src="../../../public/images/svg/header-icons/Notification.svg"
+                src="/images/svg/header-icons/Notification.svg"
                 alt=""
                 className="header-icons"
                 width={26}
@@ -103,7 +99,7 @@ const Header = () => {
             </a>
             <a href="#" className="header-icons-link">
               <img
-                src="../../../public/images/svg/header-icons/avatar 1.svg"
+                src="/public/images/svg/header-icons/avatar 1.svg"
                 alt=""
                 className="header-icons"
                 width={24}
