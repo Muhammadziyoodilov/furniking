@@ -99,7 +99,7 @@ const Header = () => {
             </a>
             <a href="#" className="header-icons-link">
               <img
-                src="/public/images/svg/header-icons/avatar 1.svg"
+                src="/images/svg/header-icons/avatar 1.svg"
                 alt=""
                 className="header-icons"
                 width={24}
