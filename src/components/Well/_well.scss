@@ -1,0 +1,6 @@
+.well {
+  background-color: $pr-color;
+  color: $white;
+  @include font(400, 16, 1);
+  font-family: "Rubik";
+}

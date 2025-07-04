@@ -1,0 +1,61 @@
+.offer {
+  font-family: "Mulish";
+  &-title {
+    @include font(600, 22, 1);
+  }
+  &-info {
+    @include font(400, 12, 18px);
+  }
+  &-price {
+    @include font(700, 18, 1.2);
+    letter-spacing: 0.5%;
+    color: $pr-color;
+  }
+  &-old-price {
+    @include font(700, 18, 1.2);
+    letter-spacing: 0.5%;
+    color: #cccccc;
+    text-decoration: line-through;
+  }
+  &-btn {
+    @include font(700, 12, 1);
+    color: $white;
+    background-color: $pr-color;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 2px;
+  }
+  .card-content {
+    max-width: 227px;
+  }
+  .time-content {
+    font-family: "Rubik";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $pr-color;
+    color: $white;
+    padding: 6.67px 11.11px 7.78px 10px;
+    border-radius: 50%;
+  }
+  .time {
+    @include font(500, 14, 1.2);
+  }
+  .time-info {
+    @include font(400, 6, 1.2);
+    letter-spacing: 0.5%;
+  }
+  &-card {
+    width: 520px;
+    height: 249px;
+    background-image: url(../../../public/images/png/offer/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  .card-content {
+    margin-left: 24px;
+  }
+}

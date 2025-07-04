@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+body {
+  font-family: "Mulish";
+  @include font(600, 24, 1);
+  color: $black;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Rubik";
+  @include font(500, 40, 1);
+  color: #2f2f2f;
+}
+h2 {
+  @include font(700, 36, 1);
+  text-transform: uppercase;
+}

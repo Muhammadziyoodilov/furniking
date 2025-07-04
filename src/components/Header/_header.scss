@@ -1,0 +1,62 @@
+.header {
+  @include font(400, 14, 1);
+  &-input-wrp {
+    border: 2px $pr-color solid;
+    border-radius: 8px;
+    position: relative;
+    .catigories {
+      position: absolute;
+      background-color: #f7f8fa;
+      width: 129px;
+      @include font(400, 14, 1);
+      left: 340px;
+      top: 44px;
+      overflow: hidden;
+      height: 0%;
+      transition: all 0.3s;
+      z-index: 1000;
+      &.active {
+        height: 357px;
+      }
+      &-link {
+        color: $black;
+      }
+      &-item {
+        padding: 10px 29px;
+        border-bottom: 2px #e3e3e3 solid;
+        transition: all 0.3s;
+        :hover {
+          color: $white;
+        }
+      }
+      &-item:hover {
+        background-color: $pr-color;
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .search-buttom {
+    border: none;
+    background-color: $pr-color;
+  }
+  .input-link {
+    color: $black;
+    margin-left: 10px;
+    margin-right: 21px;
+  }
+  &-input {
+    border: none;
+    border-radius: 8px;
+    padding: 0 150px 0 23px;
+    outline: none;
+  }
+  &-arrow {
+    transition: all 0.3s;
+    &.rotate {
+      transform: rotate(180deg);
+    }
+  }
+}

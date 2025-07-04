@@ -1,0 +1,9 @@
+.payment {
+  &-title {
+    @include font(500, 20, 26px);
+  }
+  &-info {
+    @include font(400, 14, 26px);
+    color: #515151b5;
+  }
+}

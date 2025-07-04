@@ -1,0 +1,63 @@
+.navbar {
+  &-container {
+    position: relative;
+  }
+  .sitemenu {
+    position: absolute;
+    top: 67px;
+    background-color: #f7f8fa;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s;
+    &.active {
+      width: 256px;
+    }
+    &-item {
+      border-bottom: 1px #e3e3e3 solid;
+      padding: 11px 0px 14px 29px;
+      transition: all 0.3s;
+    }
+    &-item:hover {
+      background-color: $pr-color;
+      cursor: pointer;
+      .sitemenu-link {
+        color: $white;
+      }
+    }
+    &-link {
+      @include font(400, 14, 1);
+      color: $black;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex-shrink: 0;
+    }
+  }
+  &-btn {
+    background-color: $pr-color;
+    color: $white;
+    padding: 22px 40px 21px 30px;
+    border: none;
+    @include font(500, 16, 1);
+    cursor: pointer;
+  }
+  .sitenav {
+    max-width: 506px;
+    width: 100%;
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-item {
+      transition: all 0.3s;
+      :hover {
+        color: $pr-color;
+      }
+    }
+    &-link {
+      @include font(400, 16, 1);
+      color: $black;
+    }
+  }
+}

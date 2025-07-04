@@ -1,0 +1,19 @@
+.footer {
+  .ft {
+    @include font(400, 14, 14px);
+  }
+  &-info {
+    @include font(400, 16, 32px);
+    color: $black;
+  }
+  &-top {
+    h4 {
+      @include font(500, 18, 40px);
+      letter-spacing: 1%;
+    }
+    h5 {
+      @include font(400, 18, 40px);
+      letter-spacing: 1%;
+    }
+  }
+}

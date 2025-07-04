@@ -1,0 +1,13 @@
+.trending {
+  font-family: "Mulish";
+  &-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    @include font(600, 24, 1);
+    color: #c2c2c2;
+    &.active {
+      color: $pr-color;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.custom {
+  font-family: "Mulish";
+  overflow: visible;
+  margin-bottom: 115px;
+  .swiper-slide {
+    background-color: #f8fafb;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    position: relative;
+    width: 816px;
+  }
+  &-img {
+    position: absolute;
+    top: -15%;
+    z-index: 111;
+  }
+  &-info {
+    text-align: center;
+    max-width: 566px;
+    @include font(400, 16, 1.5);
+  }
+  &-name {
+    @include font(600, 24, 1.2);
+    letter-spacing: 0.5%;
+  }
+  &-mini-title {
+    @include font(400, 16, 1.25);
+    letter-spacing: 0.5%;
+  }
+}

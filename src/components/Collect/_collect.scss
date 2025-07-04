@@ -1,0 +1,62 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 17px;
+}
+
+.div1 {
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  background-image: url(../../../public/images/png/collect-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 594px;
+  height: 512px;
+}
+
+.div2 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  background-image: url(../../../public/images/png/col.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 460px;
+  height: 247px;
+}
+
+.div3 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 3;
+  background-image: url(../../../public/images/png/jfjfj.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 460px;
+  height: 247px;
+}
+.collect {
+  font-family: "Mulish";
+
+  &-title {
+    @include font(700, 22, 26px);
+    color: $black;
+  }
+  &-title-2 {
+    @include font(600, 22, 1);
+  }
+  &-price {
+    @include font(600, 20, 26px);
+    color: $pr-color;
+  }
+  &-link {
+    @include font(400, 16, 26px);
+    color: #757575;
+  }
+}
