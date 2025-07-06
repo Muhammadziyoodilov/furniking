@@ -41,3 +41,17 @@
     text-decoration: line-through;
   }
 }
+.hover-wrp {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  left: 223px;
+  top: 87px;
+  display: none;
+}
+.product:hover {
+  .hover-wrp {
+    display: flex;
+  }
+}

@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { productsData } from "./data/products";
 const TopProducts = () => {
-  console.log(productsData);
+  const [likedItems, setLikedItems] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
+  const toggleCart = (id) => {
+    if (cartItems.includes(id)) {
+      setCartItems(cartItems.filter((itemId) => itemId !== id));
+    } else {
+      setCartItems([...cartItems, id]);
+    }
+  };
+  const toggleLike = (id) => {
+    if (likedItems.includes(id)) {
+      setLikedItems(likedItems.filter((itemId) => itemId !== id));
+    } else {
+      setLikedItems([...likedItems, id]);
+    }
+  };
   return (
     <>
       <div className="container grid grid-cols-4 gap-[70px]">
@@ -14,6 +29,35 @@ const TopProducts = () => {
                 }
               >
                 <h4 className="catigory-title">{product.badge}</h4>
+              </div>
+              <div className="hover-wrp">
+                <img
+                  src={
+                    likedItems.includes(product.id)
+                      ? "images/svg/Liked.svg"
+                      : "images/svg/Favourite.svg"
+                  }
+                  alt=""
+                  onClick={() => {
+                    toggleLike(product.id);
+                  }}
+                />
+
+                <img
+                  src={
+                    cartItems.includes(product.id)
+                      ? "images/svg/added.svg"
+                      : "images/svg/Shop.svg"
+                  }
+                  alt=""
+                  onClick={() => {
+                    toggleCart(product.id);
+                  }}
+                />
+
+                <img src="images/svg/Compare.svg" alt="" />
+
+                <img src="images/svg/View.svg" alt="" />
               </div>
               <img
                 src="/images/png/Container.png"
